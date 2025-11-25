@@ -5,15 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Otniel Kristianto Putra – Portfolio</title>
 
-    <!-- Tailwind -->
+    
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom CSS -->
+    
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="bg-black text-white font-sans">
 
-     <!-- HERO SECTION -->
+<nav class="fixed top-0 left-0 w-full bg-black/80 backdrop-blur-md border-b border-white/10 z-50">
+    <div class="max-w-6xl mx-auto px-8 md:px-20 h-16 flex items-center justify-between">
+
+        
+        <a href="#" class="text-xl font-semibold tracking-wide">
+            OtnielKrst
+        </a>
+
+        <div class="hidden md:flex gap-8 text-gray-300 text-sm">
+            <a href="#about" class="hover:text-white transition">About</a>
+            <a href="#skills" class="hover:text-white transition">Skills</a>
+            <a href="#projects" class="hover:text-white transition">Projects</a>
+            <a href="#contact" class="hover:text-white transition">Contact</a>
+        </div>
+
+    </div>
+</nav>
+
+<div class="h-16"></div>
+
+
+     
 <section class="min-h-screen flex flex-col justify-center px-8 md:px-20">
     <h1 class="text-5xl md:text-6xl font-bold leading-tight">
         Otniel Kristianto Putra
@@ -29,14 +50,14 @@
     </p>
 
     <div class="flex flex-wrap gap-4 mt-8">
-        <!-- View Projects -->
+     
         <a href="#projects"
            class="border border-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition">
             View Projects
         </a>
 
-        <!-- Download CV -->
-        <a href="/mnt/data/CV Otniel Kristianto Putra.pdf"
+     
+        <a href="./assets/CV Otniel Kristianto Putra.pdf"
            download
            class="bg-white text-black px-6 py-2 rounded-md hover:bg-gray-300 transition">
             Download CV
@@ -44,7 +65,7 @@
     </div>
 </section>
 
-    <!-- ABOUT ME SECTION -->
+    
 <section id="about" class="px-8 md:px-20 py-20 bg-black">
     <h2 class="text-3xl font-bold mb-6">About Me</h2>
 
@@ -58,13 +79,13 @@
     </p>
 </section>
 
-    <!-- SKILLS SECTION -->
+    
 <section id="skills" class="px-8 md:px-20 py-20 bg-black">
     <h2 class="text-3xl font-bold mb-10">Skills</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
 
-        <!-- Web Development -->
+    
         <div>
             <h3 class="text-xl font-semibold mb-4">Web Development</h3>
             <ul class="space-y-2 text-gray-300">
@@ -77,7 +98,7 @@
             </ul>
         </div>
 
-        <!-- Programming -->
+    
         <div>
             <h3 class="text-xl font-semibold mb-4">Programming Languages</h3>
             <ul class="space-y-2 text-gray-300">
@@ -87,7 +108,7 @@
             </ul>
         </div>
 
-        <!-- Tools -->
+    
         <div>
             <h3 class="text-xl font-semibold mb-4">Tools</h3>
             <ul class="space-y-2 text-gray-300">
@@ -99,31 +120,31 @@
     </div>
 </section>
 
-    <!-- PROJECTS SECTION -->
+
 <section id="projects" class="px-8 md:px-20 py-20 bg-black">
     <h2 class="text-3xl font-bold mb-10">Projects</h2>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
 
-        <!-- Project 1: Supra MK4 Landing Page -->
+    
         <div class="border border-white/10 rounded-lg p-6 hover:border-white/30 transition">
             <img src="./assets/Supra.jpg" alt="Supra Project" class="w-full h-48 object-cover rounded-md mb-4">
             <h3 class="text-xl font-semibold">Supra MK4 Landing Page</h3>
             <p class="text-gray-400 mt-2 text-sm">HTML • Tailwind CSS</p>
 
             <div class="flex gap-3 mt-4">
-                <a href="https://radiant-crisp-b7af56.netlify.app/"
+                <a href="./projects/Porto/index.html"
                    class="px-4 py-2 border border-white rounded-md hover:bg-white hover:text-black transition text-sm">
                     View Project
                 </a>
-                <a href="#"
+                <a href="https://github.com/otnielkrst/Supra-MK-IV.git"
                    class="px-4 py-2 border border-white rounded-md hover:bg-white hover:text-black transition text-sm">
                     GitHub
                 </a>
             </div>
         </div>
 
-        <!-- Project 2: Calculator App -->
+        
         <div class="border border-white/10 rounded-lg p-6 hover:border-white/30 transition">
             <div class="w-full h-48 bg-white/5 rounded-md mb-4 flex items-center justify-center text-gray-500">
                 Calculator Preview
@@ -146,7 +167,7 @@
     </div>
 </section>
 
-    <!-- CONTACT SECTION -->
+    
 <section id="contact" class="px-8 md:px-20 py-20 bg-black">
     <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
 
@@ -157,28 +178,28 @@
 
     <div class="flex flex-wrap gap-4 mt-8">
         
-        <!-- Email -->
+        
         <a href="mailto:putrakristianto22@gmail.com"
            class="border border-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition">
             Email
         </a>
 
-        <!-- GitHub -->
+        
         <a href="https://github.com/otnielkrst"
            target="_blank"
            class="border border-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition">
             GitHub
         </a>
 
-        <!-- LinkedIn -->
+        
         <a href="https://www.linkedin.com/in/otniel-kristianto-putra-6823b62b3"
            target="_blank"
            class="border border-white px-6 py-2 rounded-md hover:bg-white hover:text-black transition">
             LinkedIn
         </a>
 
-        <!-- Download CV -->
-        <a href="/mnt/data/CV Otniel Kristianto Putra.pdf"
+        
+        <a href="./assets/CV Otniel Kristianto Putra.pdf"
            download
            class="bg-white text-black px-6 py-2 rounded-md hover:bg-gray-300 transition">
             Download CV
@@ -186,7 +207,7 @@
     </div>
 </section>
 
-    <!-- Footer -->
+
 
 </body>
 </html>
